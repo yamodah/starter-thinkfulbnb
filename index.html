@@ -19,7 +19,7 @@
 
   <body>
     <header>
-      <div class="logo">Thinkfulbnb</div>
+      <div class="logo group">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
           <li><a>Stay</a></li>
@@ -35,6 +35,30 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form class="group">
+          <div class="item">
+            <label for="location">Location</label>
+            <input id="location" type="text" placeholder="Search Destination">
+          </div>
+          <div class="item">
+            <label>Arrive</label>
+            <input type="date" placeholder="mm/dd/yyyy" onfocus="(this.type='date')">
+          </div>
+          <div class="item">
+            <label>Depart</label>
+            <input type="date" placeholder="mm/dd/yyyy" onfocus="(this.type='date')">
+          </div>
+          <div class="item">
+            <label for="type">Type</label>
+            <select name="type" id="type" size="1">
+              <option value="apartment">Apartment</option>
+              <option value="house">House</option>
+              <option value="SharedRoom">Shared Room</option>
+              <option value="resort">Resort</option>
+            </select>
+          </div>
+          <button class = "item" type="submit">Search</button>
+        </form>
       </section>
 
       <!-- About -->
@@ -50,8 +74,8 @@
         <img 
           src="images/vacation-rental-inside-stone.png"
           alt="Thinkfulbnb - Vacation rental inside stone"
-        /></div>
-        <div class="item">
+          /></div>
+          <div class="item">
         <p>
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -59,13 +83,14 @@
           neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
           gravida neque.
         </p>
-      </div>
-      </div>
+      </div></div>
       </section>
 
       <!-- Ideas -->
-      <section id="ideas">
+      <section id="ideas"">
         <h2>Ideas</h2>
+        <div class="group">
+          <div class="item">
         <h3>Forest retreats</h3>
         <img
           src="images/forest-retreat.png"
@@ -73,16 +98,19 @@
         />
         <h3>Beaches</h3>
         <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-
+        </div>
+        <div class="item">
         <h3>Rustic cabins</h3>
         <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-
         <h3>Pet-friendly</h3>
         <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
+        </div>
+        </div>
       </section>
 
       <!-- Host -->
-      <section id="host" class="alternate-background">
+      <section id="host" class="alternate-background group">
+        <div class="item">
         <h2>Want to Become a Thinkfulbnb Host?</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -101,8 +129,10 @@
             hendrerit mauris.
           </li>
         </ul>
-
+      </div>
+      <div class="item">
         <img src="images/become-a-host.png" alt="Thinkfulbnb - Become a host" />
+      </div>
       </section>
     </main>
 
