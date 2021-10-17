@@ -129,7 +129,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 850px) {
+@media all and (min-width: 900px) {
   .group {
     flex-direction: row;
   }
