@@ -185,4 +185,7 @@ footer p {
     max-width: 200px;
     align-self: flex-end;
   }
+  label.item{
+    padding-bottom: 10px;
+  }
 }
