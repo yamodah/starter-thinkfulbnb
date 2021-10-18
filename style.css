@@ -49,7 +49,6 @@ main img {
 .item {
   flex: 1;
   margin: 0 10px;
-  flex-shrink: 0;
 }
 
 .item-double {
@@ -57,6 +56,9 @@ main img {
 }
 .wrap{
   flex-wrap: wrap;
+}
+.centerText{
+  align-self: center;
 }
 img{
   min-width: 100%;
@@ -157,7 +159,7 @@ footer p {
     resize: horizontal;
   }
 }
-@media all and (min-width: 1165px) {
+@media all and (min-width: 1205px) {
   .group {
     flex-direction: row;
     justify-content: space-between;
@@ -173,12 +175,14 @@ footer p {
     padding: 0 30px;
   }
   form{
-    justify-content: space-between;
-    align-items: center;
-    resize: horizontal;
+    justify-content: space-evenly;
+    
+  }
+  form div.item.innerGroup{
+    align-content: flex-end;
   }
    form div button{
     max-width: 200px;
-    float: right;
+    align-self: flex-end;
   }
 }
