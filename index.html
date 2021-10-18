@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vacation Rentals & Unique Homes</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
     type="text/css" />
@@ -31,21 +31,21 @@
       <h2>Find the perfect vacation rental</h2>
       <!-- Create a form here -->
       <form class="group">
-        <div class="innerGroup">
+        <div class="item innerGroup">
           <label class="item" for="location">Location</label>
           <input class="item" id="location" type="text" placeholder="Search Destination">
         </div>
 
-        <div class="innerGroup">
+        <div class="item innerGroup">
           <label class="item" for="arrivalDate">Arrive</label>
           <input class="item" type="date" id="arrivalDate" name="arrival" placeholder="mm/dd/yyyy">
         </div>
-        <div class="innerGroup">
+        <div class="item innerGroup">
           <label class="item">Depart</label>
           <input class="item" type="date" placeholder="mm/dd/yyyy" id="departureDate" name="departure">
         </div>
 
-        <div class="innerGroup">
+        <div class="item innerGroup">
           <label class="item" for="type">Type</label>
           <select class="item" name="type" id="type" size="1">
             <option value="apartment">Apartment</option>
@@ -57,10 +57,9 @@
             <option value="yurt">Yurt</option>
           </select>
         </div>
-
-        <div class="innerGroup">
-        <button class="item" type="submit">Search</button>
-      </div>
+        <div class="item">
+        <button type="submit">Search</button>
+        </div>
 
       </form>
     </section>

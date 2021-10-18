@@ -48,7 +48,7 @@ main img {
 }
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 0 10px;
   flex-shrink: 0;
 }
 
@@ -136,7 +136,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 960px) {
+@media all and (min-width: 800px) {
   .group {
     flex-direction: row;
     justify-content: space-between;
@@ -145,7 +145,6 @@ footer p {
   .innerGroup{
     flex-direction: column;
     align-content: stretch;
-    
   }
   header {
     display: flex;
@@ -157,7 +156,29 @@ footer p {
     align-items: center;
     resize: horizontal;
   }
-   .innerGroup button{
-     flex-grow: 1;
-   }
+}
+@media all and (min-width: 1165px) {
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .innerGroup{
+    flex-direction: column;
+    align-content: stretch;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  form{
+    justify-content: space-between;
+    align-items: center;
+    resize: horizontal;
+  }
+   form div button{
+    max-width: 200px;
+    float: right;
+  }
 }
